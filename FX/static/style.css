@@ -1,0 +1,64 @@
+/* --- CONFIGURACIÓN GENERAL (MODO OSCURO) --- */
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0;
+    background-color: #121212; 
+    color: #e0e0e0; 
+}
+
+/* --- CABECERA --- */
+header { 
+    background-color: #0056b3; 
+    padding: 20px 30px; 
+    color: white; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.logo-container { display: flex; align-items: center; gap: 15px; }
+.logo-container i { font-size: 3rem; color: #28a745; }
+.logo-container h1 { margin: 0; font-size: 2.5rem; display: flex; align-items: center; gap: 15px; }
+.logo-container span { font-size: 1.2rem; font-weight: 400; opacity: 0.9; border-left: 2px solid rgba(255,255,255,0.4); padding-left: 15px; }
+
+nav ul { list-style: none; padding: 0; margin: 0; }
+nav ul li { display: inline; margin: 0 10px; }
+nav ul li a { color: white; text-decoration: none; font-weight: bold; cursor: pointer; padding: 8px 12px; border-radius: 4px; transition: 0.3s; }
+nav ul li a:hover { background-color: rgba(255,255,255,0.1); text-decoration: underline; }
+
+/* --- SECCIONES Y VISIBILIDAD --- */
+main { padding: 20px; }
+.seccion-contenido { display: block; }
+.oculto { display: none !important; }
+
+/* --- TARJETAS --- */
+.contenedor-tarjetas { display: flex; gap: 20px; margin-top: 20px; }
+.tarjeta { background: #1e1e1e; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); flex: 1; }
+.tarjeta h2 { color: #ffffff; margin-top: 0; }
+
+/* --- PANEL ADMIN (CENTRADO) --- */
+.contenedor-admin-centrado {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 50vh;        
+    width: 100%;
+}
+.tarjeta-admin-medio {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+    width: 100%;
+    max-width: 400px; 
+}
+.tarjeta-admin-medio h2 { text-align: center; border-bottom: 2px solid #2d2d2d; padding-bottom: 10px; }
+
+/* --- FORMULARIOS --- */
+form label { display: block; margin-top: 15px; font-weight: bold; }
+form input { width: 100%; padding: 10px; margin-top: 5px; box-sizing: border-box; background: #2d2d2d; border: 1px solid #444; color: white; border-radius: 4px; }
+form button { width: 100%; padding: 10px; margin-top: 20px; background-color: #0056b3; color: white; border: none; cursor: pointer; border-radius: 4px; font-weight: bold; }
+form button:hover { background-color: #004085; }
+
+/* --- FOOTER --- */
+footer { text-align: center; color: #666; margin-top: 40px; padding: 20px; }
